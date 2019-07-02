@@ -1,0 +1,17 @@
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.model
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://172.10.20.39:3306/i_test?socketTimeout=120000&autoReconnect=true&failOverReadOnly=false&maxReconnects=1&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&Unicode=true&allowMultiQueries=true&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 18080
+
